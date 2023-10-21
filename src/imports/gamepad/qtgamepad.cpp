@@ -60,6 +60,8 @@ public:
     QGamepadModule(QObject *parent = 0) : QQmlExtensionPlugin(parent) { }
     void registerTypes(const char *uri) override
     {
+        qDebug() << "REGISTER !!" <<uri;
+
         Q_ASSERT(QLatin1String(uri) == QLatin1String("QtGamepad"));
 
         // @uri QtGamepad

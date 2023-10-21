@@ -155,7 +155,7 @@ QEvdevGamepadDevice *QEvdevGamepadBackend::newDevice(const QByteArray &device)
 
 QEvdevGamepadDevice *QEvdevGamepadBackend::device(int deviceId)
 {
-    for (QEvdevGamepadDevice *device : qAsConst(m_devices))
+    for (QEvdevGamepadDevice *device : std::as_const(m_devices))
         if (device->deviceId() == deviceId)
             return device;
     return nullptr;

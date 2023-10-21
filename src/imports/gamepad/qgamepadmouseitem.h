@@ -70,7 +70,7 @@ public:
     double deadZoneSize() const;
     QPointF mousePosition() const;
 
-signals:
+Q_SIGNALS:
 
     void activeChanged(bool isActive);
     void gamepadChanged(QGamepad* gamepad);
@@ -78,7 +78,7 @@ signals:
     void deadZoneSizeChanged(double size);
     void mousePositionChanged(QPointF position);
 
-public slots:
+public Q_SLOTS:
 
     void setActive(bool arg);
     void setGamepad(QGamepad* gamepad);
@@ -88,13 +88,13 @@ public slots:
     void mouseButtonPressed(int button);
     void mouseButtonReleased(int button);
 
-private slots:
+private Q_SLOTS:
     void updateMousePostion();
     void processMouseMoveEvent(QPointF position);
     void processMouseButtonEvent(bool isPressed, Qt::MouseButton button = Qt::LeftButton);
 
 protected:
-    void geometryChanged(const QRectF &newGeometry, const QRectF &oldGeometry) override;
+    void geometryChange(const QRectF &newGeometry, const QRectF &oldGeometry) override;
 
 private:
     void sendGeneratedMouseEvent(QMouseEvent *event);
