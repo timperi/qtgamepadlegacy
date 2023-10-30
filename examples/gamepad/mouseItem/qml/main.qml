@@ -48,9 +48,9 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.2
-import QtQuick.Window 2.0
-import QtGamepad 1.0
+import QtQuick
+import QtQuick.Window
+import QtGamepad
 
 Window {
     visible: true
@@ -72,7 +72,7 @@ Window {
 
     Connections {
         target: GamepadManager
-        onGamepadConnected: gamepad1.deviceId = deviceId
+        function onGamepadConnected(deviceId) { gamepad1.deviceId = deviceId }
     }
 
     Gamepad {

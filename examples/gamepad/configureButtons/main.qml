@@ -34,14 +34,16 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
-import QtQuick.Controls 2.1
-import QtQuick.Layouts 1.2
-import QtQuick.Window 2.0
-import QtGamepad 1.0
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQuick.Window
+import QtGamepad
 
 
 ApplicationWindow {
+    id: window
+
     visible: true
     title: qsTr("Configure gamepad")
     width: 400
@@ -68,9 +70,9 @@ ApplicationWindow {
 
     Connections {
         target: GamepadManager
-        onButtonConfigured: pressButton(null)
-        onAxisConfigured: pressButton(null)
-        onConfigurationCanceled: pressButton(null)
+        function onButtonConfigured() { window.pressButton(null) }
+        function onAxisConfigured() { window.pressButton(null) }
+        function onConfigurationCanceled() { window.pressButton(null) }
     }
 
     Rectangle {

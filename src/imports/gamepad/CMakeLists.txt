@@ -4,14 +4,16 @@
 ## declarative_gamepad Plugin:
 #####################################################################
 
-qt_internal_add_qml_module(declarative_gamepad
+qt_internal_add_qml_module(GamepadQuickPrivate
     URI "QtGamepad"
-    VERSION "1.${PROJECT_VERSION_MINOR}"
+    VERSION "${PROJECT_VERSION}"
     CLASS_NAME QGamepadModule
-    SKIP_TYPE_REGISTRATION
     SOURCES
         qgamepadmouseitem.cpp qgamepadmouseitem.h
-        qtgamepad.cpp
+        qtgamepadquicktypes_p.h
+    NO_PLUGIN_OPTIONAL
+    DEPENDENCIES QtQuick
+    INTERNAL_MODULE
     PUBLIC_LIBRARIES
         Qt::Core
         Qt::Gamepad

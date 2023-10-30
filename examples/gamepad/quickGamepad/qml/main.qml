@@ -221,7 +221,7 @@ Window {
 
     Connections {
         target: GamepadManager
-        onGamepadConnected: gamepad.deviceId = deviceId
+        function onGamepadConnected(deviceId) { gamepad.deviceId = deviceId }
     }
 
     Gamepad {

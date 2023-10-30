@@ -48,7 +48,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.0
+import QtQuick
 //import QtGraphicalEffects 1.0
 
 Item {
