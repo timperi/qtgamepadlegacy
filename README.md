@@ -1,6 +1,11 @@
-Qt Gamepad
+# Qt Gamepad Legacy
 
-A Qt 5 module that adds support for getting events from gamepad devices on multiple platforms.
+A Qt 6 module that adds support for getting events from gamepad devices on multiple platforms.
+
+This is Qt5's QtGamepad module ported to Qt6. I don't intend to develop it further; I'll just try to
+keep compatibility with upcoming Qt releases.
+
+I've only tested the `evdev` plugin which works fine.
 
 Supported Platforms:
 Native Backends
