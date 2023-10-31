@@ -52,7 +52,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Window
-import QtGamepad
+import QtGamepadLegacy
 
 Window {
     id: applicationWindow1

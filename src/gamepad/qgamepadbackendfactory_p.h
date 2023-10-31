@@ -48,7 +48,7 @@
 // We mean it.
 //
 
-#include <QtGamepad/qtgamepadglobal.h>
+#include <QtGamepadLegacy/qtgamepadglobal.h>
 #include <QtCore/QStringList>
 #include <QtCore/private/qglobal_p.h>
 

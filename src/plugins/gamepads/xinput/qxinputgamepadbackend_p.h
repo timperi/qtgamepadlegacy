@@ -36,8 +36,8 @@
 #ifndef QXINPUTGAMEPADBACKEND_P_H
 #define QXINPUTGAMEPADBACKEND_P_H
 
-#include <QtGamepad/QGamepadManager>
-#include <QtGamepad/private/qgamepadbackend_p.h>
+#include <QtGamepadLegacy/QGamepadManager>
+#include <QtGamepadLegacy/private/qgamepadbackend_p.h>
 #include <QtCore/QLibrary>
 
 QT_BEGIN_NAMESPACE

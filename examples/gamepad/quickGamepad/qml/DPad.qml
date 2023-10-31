@@ -49,7 +49,7 @@
 ****************************************************************************/
 
 import QtQuick
-import QtGamepad
+import QtGamepadLegacy
 
 Item {
     property Gamepad gamepad

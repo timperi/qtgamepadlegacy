@@ -11,10 +11,10 @@ if(NOT DEFINED INSTALL_EXAMPLESDIR)
     set(INSTALL_EXAMPLESDIR "examples")
 endif()
 
-set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/gamepad/simple")
+set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/gamepadlegacy/simple")
 
 find_package(QT NAMES Qt5 Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gamepad Gui)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS GamepadLegacy Gui)
 
 qt_add_executable(simple WIN32 MACOSX_BUNDLE
     gamepadmonitor.cpp gamepadmonitor.h
@@ -22,7 +22,7 @@ qt_add_executable(simple WIN32 MACOSX_BUNDLE
 )
 target_link_libraries(simple PUBLIC
     Qt::Core
-    Qt::Gamepad
+    Qt::GamepadLegacy
     Qt::Gui
 )
 

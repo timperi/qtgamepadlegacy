@@ -38,8 +38,8 @@
 #define QGAMEPAD_H
 
 #include <QtCore/QObject>
-#include <QtGamepad/qtgamepadglobal.h>
-#include <QtGamepad/QGamepadManager>
+#include <QtGamepadLegacy/qtgamepadglobal.h>
+#include <QtGamepadLegacy/QGamepadManager>
 
 QT_BEGIN_NAMESPACE
 

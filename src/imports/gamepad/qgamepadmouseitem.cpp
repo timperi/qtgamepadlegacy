@@ -37,7 +37,7 @@
 #include "qgamepadmouseitem.h"
 #include <cmath>
 
-#include <QtGamepad/QGamepad>
+#include <QtGamepadLegacy/QGamepad>
 #include <QtGui/QWindow>
 #include <QtQuick/QQuickWindow>
 #include <QtGui/QGuiApplication>

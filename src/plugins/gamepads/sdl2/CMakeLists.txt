@@ -6,15 +6,15 @@
 
 qt_internal_add_plugin(QSdl2GamepadBackendPlugin
     OUTPUT_NAME sdl2gamepad
-    PLUGIN_TYPE gamepads
+    PLUGIN_TYPE legacygamepads
     SOURCES
         main.cpp
         qsdlgamepadbackend.cpp qsdlgamepadbackend_p.h
         sdl2.json
     LIBRARIES
         Qt::Core
-        Qt::Gamepad
-        Qt::GamepadPrivate
+        Qt::GamepadLegacy
+        Qt::GamepadLegacyPrivate
         Qt::Gui
         WrapSDL2::WrapSDL2
 )

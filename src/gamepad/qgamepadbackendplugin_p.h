@@ -48,7 +48,7 @@
 // We mean it.
 //
 
-#include <QtGamepad/qtgamepadglobal.h>
+#include <QtGamepadLegacy/qtgamepadglobal.h>
 
 #include <QtCore/qplugin.h>
 #include <QtCore/qfactoryinterface.h>

@@ -3,9 +3,9 @@
 cmake_minimum_required(VERSION 3.16)
 
 include(.cmake.conf)
-project(QtGamepad
+project(QtGamepadLegacy
     VERSION "${QT_REPO_MODULE_VERSION}"
-    DESCRIPTION "Qt Gamepad Libraries"
+    DESCRIPTION "Qt Gamepad (legacy) Libraries"
     HOMEPAGE_URL "https://qt.io/"
     LANGUAGES CXX C
 )

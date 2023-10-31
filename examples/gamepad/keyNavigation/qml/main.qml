@@ -51,7 +51,7 @@
 
 import QtQuick
 import QtQuick.Window
-import QtGamepad
+import QtGamepadLegacy
 
 Window {
     visible: true

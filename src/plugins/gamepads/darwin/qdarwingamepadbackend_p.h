@@ -40,8 +40,8 @@
 #include <QtCore/QTimer>
 #include <QtCore/QMap>
 
-#include <QtGamepad/QGamepadManager>
-#include <QtGamepad/private/qgamepadbackend_p.h>
+#include <QtGamepadLegacy/QGamepadManager>
+#include <QtGamepadLegacy/private/qgamepadbackend_p.h>
 
 Q_FORWARD_DECLARE_OBJC_CLASS(QT_MANGLE_NAMESPACE(DarwinGamepadManager));
 

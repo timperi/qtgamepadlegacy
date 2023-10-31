@@ -8,7 +8,7 @@ find_package(Qt6 ${PROJECT_VERSION} CONFIG REQUIRED COMPONENTS DeviceDiscoverySu
 
 qt_internal_add_plugin(QEvdevGamepadBackendPlugin
     OUTPUT_NAME evdevgamepad
-    PLUGIN_TYPE gamepads
+    PLUGIN_TYPE legacygamepads
     SOURCES
         main.cpp
         qevdevgamepadbackend.cpp qevdevgamepadbackend_p.h
@@ -17,8 +17,8 @@ qt_internal_add_plugin(QEvdevGamepadBackendPlugin
         Qt::Core
         Qt::CorePrivate
         Qt::DeviceDiscoverySupportPrivate
-        Qt::Gamepad
-        Qt::GamepadPrivate
+        Qt::GamepadLegacy
+        Qt::GamepadLegacyPrivate
         Qt::Gui
 )
 

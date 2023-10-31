@@ -49,7 +49,7 @@
 ****************************************************************************/
 
 #include "gamepadmonitor.h"
-#include <QtGamepad/QGamepad>
+#include <QtGamepadLegacy/QGamepad>
 
 #include <QDebug>
 #include <QLoggingCategory>

@@ -6,15 +6,15 @@
 
 qt_internal_add_plugin(QXInputGamepadBackendPlugin
     OUTPUT_NAME xinputgamepad
-    PLUGIN_TYPE gamepads
+    PLUGIN_TYPE legacygamepads
     SOURCES
         main.cpp
         qxinputgamepadbackend.cpp qxinputgamepadbackend_p.h
         xinput.json
     LIBRARIES
         Qt::Core
-        Qt::Gamepad
-        Qt::GamepadPrivate
+        Qt::GamepadLegacy
+        Qt::GamepadLegacyPrivate
         Qt::Gui
 )
 

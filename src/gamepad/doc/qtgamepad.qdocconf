@@ -1,36 +1,36 @@
 include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
 include($QT_INSTALL_DOCS/config/exampleurl-qtgamepad.qdocconf)
 
-project                                         = QtGamepad
-description                                     = Qt Gamepad Reference Documentation
+project                                         = QtGamepadLegacy
+description                                     = Qt Gamepad (legacy) Reference Documentation
 version                                         = $QT_VERSION
 
-examplesinstallpath                             = gamepad
+examplesinstallpath                             = gamepadlegacy
 
-qhp.projects                                       = QtGamepad
+qhp.projects                                       = QtGamepadLegacy
 
-qhp.QtGamepad.file                              = qtgamepad.qhp
-qhp.QtGamepad.namespace                         = org.qt-project.qtgamepad.$QT_VERSION_TAG
-qhp.QtGamepad.virtualFolder                     = qtgamepad
-qhp.QtGamepad.indexTitle                        = Qt Gamepad
-qhp.QtGamepad.indexRoot                         =
-qhp.QtGamepad.filterAttributes                  = qtgamepad $QT_VERSION qtrefdoc
-qhp.QtGamepad.customFilters.Qt.name             = QtGamepad $QT_VERSION
-qhp.QtGamepad.customFilters.Qt.filterAttributes = qtgamepad $QT_VERSION
+qhp.QtGamepadLegacy.file                              = qtgamepadlegacy.qhp
+qhp.QtGamepadLegacy.namespace                         = org.qt-project.qtgamepadlegacy.$QT_VERSION_TAG
+qhp.QtGamepadLegacy.virtualFolder                     = qtgamepadlegacy
+qhp.QtGamepadLegacy.indexTitle                        = Qt Gamepad (legacy)
+qhp.QtGamepadLegacy.indexRoot                         =
+qhp.QtGamepadLegacy.filterAttributes                  = qtgamepadlegacy $QT_VERSION qtrefdoc
+qhp.QtGamepadLegacy.customFilters.Qt.name             = QtGamepadLegacy $QT_VERSION
+qhp.QtGamepadLegacy.customFilters.Qt.filterAttributes = qtgamepadlegacy $QT_VERSION
 
-qhp.QtGamepad.subprojects                       = qmltypes classes examples
-qhp.QtGamepad.subprojects.qmltypes.title        = QML Types
-qhp.QtGamepad.subprojects.qmltypes.indexTitle   = Qt Gamepad QML Types
-qhp.QtGamepad.subprojects.qmltypes.selectors    = qmlclass
-qhp.QtGamepad.subprojects.qmltypes.sortPages    = true
-qhp.QtGamepad.subprojects.classes.title         = C++ Classes
-qhp.QtGamepad.subprojects.classes.indexTitle    = Qt Gamepad C++ Classes
-qhp.QtGamepad.subprojects.classes.selectors     = class fake:headerfile
-qhp.QtGamepad.subprojects.classes.sortPages     = true
-qhp.QtGamepad.subprojects.examples.title        = Examples
-qhp.QtGamepad.subprojects.examples.indexTitle   = Qt Gamepad Examples
-qhp.QtGamepad.subprojects.examples.selectors    = fake:example
-qhp.QtGamepad.subprojects.examples.sortPages    = true
+qhp.QtGamepadLegacy.subprojects                       = qmltypes classes examples
+qhp.QtGamepadLegacy.subprojects.qmltypes.title        = QML Types
+qhp.QtGamepadLegacy.subprojects.qmltypes.indexTitle   = Qt Gamepad Legacy QML Types
+qhp.QtGamepadLegacy.subprojects.qmltypes.selectors    = qmlclass
+qhp.QtGamepadLegacy.subprojects.qmltypes.sortPages    = true
+qhp.QtGamepadLegacy.subprojects.classes.title         = C++ Classes
+qhp.QtGamepadLegacy.subprojects.classes.indexTitle    = Qt Gamepad Legacy C++ Classes
+qhp.QtGamepadLegacy.subprojects.classes.selectors     = class fake:headerfile
+qhp.QtGamepadLegacy.subprojects.classes.sortPages     = true
+qhp.QtGamepadLegacy.subprojects.examples.title        = Examples
+qhp.QtGamepadLegacy.subprojects.examples.indexTitle   = Qt Gamepad Legacy Examples
+qhp.QtGamepadLegacy.subprojects.examples.selectors    = fake:example
+qhp.QtGamepadLegacy.subprojects.examples.sortPages    = true
 
 depends = qtcore qtdoc qmake
 
@@ -47,9 +47,9 @@ imagedirs  += images
 Cpp.ignoretokens         += Q_GAMEPAD_EXPORT
 Cpp.ignoredirectives     += Q_DECLARE_LOGGING_CATEGORY
 
-navigation.landingpage    = "Qt Gamepad"
-navigation.qmltypespage   = "Qt Gamepad QML Types"
-navigation.cppclassespage = "Qt Gamepad C++ Classes"
+navigation.landingpage    = "Qt Gamepad (legacy)"
+navigation.qmltypespage   = "Qt Gamepad Legacy QML Types"
+navigation.cppclassespage = "Qt Gamepad Legacy C++ Classes"
 
-manifestmeta.thumbnail.names = "QtGamepad/Qt Gamepad Mouse Item Example" \
-                               "QtGamepad/Qt Gamepad Simple Example"
+manifestmeta.thumbnail.names = "QtGamepadLegacy/Qt Gamepad Mouse Item Example" \
+                               "QtGamepadLegacy/Qt Gamepad Simple Example"

@@ -48,10 +48,10 @@
 // We mean it.
 //
 
-#include <QtGamepad/qtgamepadglobal.h>
+#include <QtGamepadLegacy/qtgamepadglobal.h>
 
 #include <QtCore/QObject>
-#include <QtGamepad/QGamepadManager>
+#include <QtGamepadLegacy/QGamepadManager>
 #include <QtCore/private/qglobal_p.h>
 
 QT_BEGIN_NAMESPACE

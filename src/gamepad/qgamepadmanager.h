@@ -39,7 +39,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QMap>
-#include <QtGamepad/qtgamepadglobal.h>
+#include <QtGamepadLegacy/qtgamepadglobal.h>
 
 QT_BEGIN_NAMESPACE
 

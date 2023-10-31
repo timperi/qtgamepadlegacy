@@ -34,8 +34,8 @@
 **
 ****************************************************************************/
 
-#include <QtGamepad/private/qgamepadbackendfactory_p.h>
-#include <QtGamepad/private/qgamepadbackendplugin_p.h>
+#include <QtGamepadLegacy/private/qgamepadbackendfactory_p.h>
+#include <QtGamepadLegacy/private/qgamepadbackendplugin_p.h>
 
 #include "qandroidgamepadbackend_p.h"
 

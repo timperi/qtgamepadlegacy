@@ -6,7 +6,7 @@
 
 qt_internal_add_plugin(QAndroidGamepadBackendPlugin
     OUTPUT_NAME androidgamepad
-    PLUGIN_TYPE gamepads
+    PLUGIN_TYPE legacygamepads
     SOURCES
         main.cpp
         qandroidgamepadbackend.cpp qandroidgamepadbackend_p.h
@@ -14,8 +14,8 @@ qt_internal_add_plugin(QAndroidGamepadBackendPlugin
     LIBRARIES
         Qt::Core
         Qt::CorePrivate
-        Qt::Gamepad
-        Qt::GamepadPrivate
+        Qt::GamepadLegacy
+        Qt::GamepadLegacyPrivate
         Qt::Gui
 )
 

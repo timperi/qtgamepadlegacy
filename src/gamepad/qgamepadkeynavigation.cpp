@@ -38,7 +38,7 @@
 #include <QtGui/QKeyEvent>
 #include <QtGui/QGuiApplication>
 #include <QtGui/QWindow>
-#include <QtGamepad/QGamepad>
+#include <QtGamepadLegacy/QGamepad>
 
 #include <private/qobject_p.h>
 

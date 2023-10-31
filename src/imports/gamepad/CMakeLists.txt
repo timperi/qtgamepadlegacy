@@ -5,7 +5,7 @@
 #####################################################################
 
 qt_internal_add_qml_module(GamepadQuickPrivate
-    URI "QtGamepad"
+    URI "QtGamepadLegacy"
     VERSION "${PROJECT_VERSION}"
     CLASS_NAME QGamepadModule
     SOURCES
@@ -16,7 +16,7 @@ qt_internal_add_qml_module(GamepadQuickPrivate
     INTERNAL_MODULE
     PUBLIC_LIBRARIES
         Qt::Core
-        Qt::Gamepad
+        Qt::GamepadLegacy
         Qt::Gui
         Qt::Qml
         Qt::Quick

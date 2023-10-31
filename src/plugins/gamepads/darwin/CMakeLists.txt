@@ -6,7 +6,7 @@
 
 qt_internal_add_plugin(QDarwinGamepadBackendPlugin
     OUTPUT_NAME darwingamepad
-    PLUGIN_TYPE gamepads
+    PLUGIN_TYPE legacygamepads
     SOURCES
         main.cpp
         qdarwingamepadbackend.mm qdarwingamepadbackend_p.h
@@ -15,8 +15,8 @@ qt_internal_add_plugin(QDarwinGamepadBackendPlugin
         ${FWFoundation}
         ${FWGameController}
         Qt::Core
-        Qt::Gamepad
-        Qt::GamepadPrivate
+        Qt::GamepadLegacy
+        Qt::GamepadLegacyPrivate
         Qt::Gui
 )
 

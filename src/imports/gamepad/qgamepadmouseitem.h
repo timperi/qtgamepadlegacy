@@ -40,7 +40,7 @@
 #include <QtQuick/QQuickItem>
 #include <QtCore/QTimer>
 #include <QtCore/QElapsedTimer>
-#include <QtGamepad/qgamepad.h>
+#include <QtGamepadLegacy/qgamepad.h>
 
 QT_BEGIN_NAMESPACE
 

@@ -11,10 +11,10 @@ if(NOT DEFINED INSTALL_EXAMPLESDIR)
     set(INSTALL_EXAMPLESDIR "examples")
 endif()
 
-set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/gamepad/quickGamepad")
+set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/gamepadlegacy/quickGamepad")
 
 find_package(QT NAMES Qt5 Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gamepad Gui Qml Quick)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS GamepadLegacy Gui Qml Quick)
 
 qt_add_executable(quickGamepad WIN32 MACOSX_BUNDLE
     main.cpp
@@ -49,7 +49,7 @@ qt_add_qml_module(quickGamepad
 
 target_link_libraries(quickGamepad PUBLIC
     Qt::Core
-    Qt::Gamepad
+    Qt::GamepadLegacy
     Qt::Gui
     Qt::Qml
     Qt::Quick

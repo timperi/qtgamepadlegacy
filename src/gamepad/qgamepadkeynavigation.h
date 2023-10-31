@@ -39,9 +39,9 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QMap>
-#include <QtGamepad/qtgamepadglobal.h>
+#include <QtGamepadLegacy/qtgamepadglobal.h>
 
-#include <QtGamepad/QGamepadManager>
+#include <QtGamepadLegacy/QGamepadManager>
 
 QT_BEGIN_NAMESPACE
 

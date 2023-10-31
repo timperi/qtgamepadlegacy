@@ -4,9 +4,9 @@
 ## Gamepad Module:
 #####################################################################
 
-qt_internal_add_module(Gamepad
+qt_internal_add_module(GamepadLegacy
     NO_GENERATE_METATYPES
-    PLUGIN_TYPES gamepads
+    PLUGIN_TYPES legacygamepads
     SOURCES
         qgamepad.cpp qgamepad.h
         qgamepadbackend.cpp qgamepadbackend_p.h
@@ -27,17 +27,17 @@ qt_internal_add_module(Gamepad
 )
 
 if(ANDROID)
-    set_property(TARGET Gamepad APPEND PROPERTY QT_ANDROID_BUNDLED_JAR_DEPENDENCIES
+    set_property(TARGET GamepadLegacy APPEND PROPERTY QT_ANDROID_BUNDLED_JAR_DEPENDENCIES
         jar/QtAndroidGamepad.jar
     )
-    set_property(TARGET Gamepad APPEND PROPERTY QT_ANDROID_LIB_DEPENDENCIES
-        plugins/gamepads/libplugins_gamepads_androidgamepad.so
+    set_property(TARGET GamepadLegacy APPEND PROPERTY QT_ANDROID_LIB_DEPENDENCIES
+        plugins/legacygamepads/libplugins_gamepads_androidgamepad.so
     )
 endif()
 
 #### Keys ignored in scope 12:.:.:gamepad.pro:<TRUE>:
 # ANDROID_FEATURES = "android.hardware.gamepad"
-qt_internal_add_docs(Gamepad
+qt_internal_add_docs(GamepadLegacy
     doc/qtgamepad.qdocconf
 )
 

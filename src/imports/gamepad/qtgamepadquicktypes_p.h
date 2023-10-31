@@ -2,7 +2,7 @@
 #define QTGAMEPADQUICKTYPES_P_H
 
 #include <QtQml/qqml.h>
-#include <QtGamepad/QtGamepad>
+#include <QtGamepadLegacy/QtGamepadLegacy>
 
 #include "qgamepadmouseitem.h"
 #include "qjsengine.h"
