@@ -69,8 +69,9 @@ public class QtGamepad {
         }
     };
 
-    QtGamepad(Activity activity)
+    QtGamepad(Context context)
     {
+        Activity activity = (Activity) context;
         m_manager = (InputManager) activity.getSystemService(Context.INPUT_SERVICE);
         m_activity = activity;
     }

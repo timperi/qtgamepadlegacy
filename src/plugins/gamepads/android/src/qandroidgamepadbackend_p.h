@@ -41,7 +41,8 @@
 #include <QtCore/QMutex>
 #include <QtCore/QSet>
 
-#include <QtCore/private/qjni_p.h>
+#include <QtCore/QJniObject>
+#include <QtCore/QJniEnvironment>
 #include <QtCore/private/qjnihelpers_p.h>
 
 #include <QtGamepadLegacy/QGamepadManager>
@@ -126,7 +127,7 @@ private:
 
 private:
     QMutex m_mutex;
-    QJNIObjectPrivate m_qtGamepad;
+    QJniObject m_qtGamepad;
     QHash<int, Mapping> m_devices;
 };
 
